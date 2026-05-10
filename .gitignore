@@ -27,6 +27,9 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
@@ -34,3 +37,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# secrets and local credentials
+*.key
+*.crt
+*.p12
+*.pfx
+*.secret
+secrets.*
+pnpm-debug.log*
